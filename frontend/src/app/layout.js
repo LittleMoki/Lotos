@@ -1,6 +1,6 @@
-import { Montserrat,Inter } from 'next/font/google'
+import { Montserrat } from 'next/font/google'
 import './globals.css'
-
+import { ProviderNextUI } from './providers'
 const montserrat = Montserrat({ subsets: ['latin'] })
 
 export const metadata = {
@@ -11,7 +11,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
 	return (
 		<html lang='en'>
-			<body className={montserrat.className}>{children}</body>
+			<body className={`${montserrat.className} h-screen`}>
+				<ProviderNextUI>{children}</ProviderNextUI>
+			</body>
 		</html>
 	)
 }

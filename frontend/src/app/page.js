@@ -1,3 +1,5 @@
+import { HomePage } from '@/modules/HomePage'
+
 export default function Home() {
-	return <main>Hello World</main>
+	return <HomePage />
 }
