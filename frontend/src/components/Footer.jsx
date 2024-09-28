@@ -1,5 +1,5 @@
-import { Container } from '@/ui/Container'
-import Link from 'next/link'
+import { Link } from 'react-router-dom'
+import { Container } from '../ui/Container'
 
 export const Footer = () => {
 	return (
